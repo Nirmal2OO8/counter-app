@@ -1,20 +1,22 @@
 let count = 0;
 
-function update() {
-  document.getElementById("count").innerText = count;
+const countElement = document.getElementById("count");
+
+function updateCounter() {
+  countElement.textContent = count;
 }
 
 function increase() {
   count++;
-  update();
+  updateCounter();
 }
 
 function decrease() {
   count--;
-  update();
+  updateCounter();
 }
 
 function reset() {
   count = 0;
-  update();
+  updateCounter();
 }

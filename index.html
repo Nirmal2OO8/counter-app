@@ -1,17 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Counter App</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
 
-  <h1 id="count">0</h1>
+  <div class="container">
 
-  <button onclick="increase()">+</button>
-  <button onclick="decrease()">-</button>
-  <button onclick="reset()">Reset</button>
+    <h1>Counter App</h1>
+
+    <p class="description">
+      A simple counter application with increase, decrease, and reset functionality.
+    </p>
+
+    <div class="counter-box">
+      <h2 id="count">0</h2>
+
+      <div class="buttons">
+        <button onclick="increase()">Increase</button>
+        <button onclick="decrease()">Decrease</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+
+  </div>
 
   <script src="script.js"></script>
+
 </body>
-</html>
